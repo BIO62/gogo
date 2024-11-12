@@ -1,0 +1,134 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+
+#header {
+    width: 100vw;
+    height: 88.91px;
+    border: 1px solid black;
+}
+
+.img-top {
+    width: 119px;
+    height: 38.91px;
+}
+
+#head-border {
+    width: 1180px;
+    height: 88.81px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-text {
+    width: 556.336px;
+    height: 22px;
+    border: 1px solid green;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    font: normal 14px/22px Helvetica Neue, sans-serif, Arial;
+    text-shadow: 1px 1px 1px hsla(hue, saturation, lightness, alpha);
+}
+
+#navigator {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#head-border2 {
+    width: 745.336px;
+    height: 38.914px;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+
+.weather {
+    width: 270.523px;
+    height: 50px;
+    border: 1px solid black;
+    margin-left: 29px;
+}
+
+.weather-1 {
+    width: 55.05px;
+    height: 50px;
+    border: 1px purple solid;
+    display: flex;
+    align-items: center;
+}
+
+.weather-logo {
+    width: 20px;
+    height: 20.86px;
+}
+
+.bar {
+    transform: rotate(90deg);
+}
+
+.hide {
+    display: none;
+    position: absolute;
+    top: 60px;
+    transition: step-start 1.3s;
+    
+}
+
+.news-h:hover+.hide {
+    display: block;
+    color: black;
+    /* font-family: ; */
+    font-size: 18px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    transform: scale(1.04);
+    
+    
+}
+.first-section-text{
+
+    height: 274px;
+    border: 1px solid greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* .news-section{
+
+} */
+
+.gogo-section{
+    width: 367px;
+    height: 286px;
+    border: 1px solid black;
+    
+}
+.second-section-text{
+    height: 254px;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
