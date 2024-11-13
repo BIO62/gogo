@@ -2,6 +2,10 @@ body {
     margin: 0px;
     padding: 0px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
 }
 
 
@@ -22,8 +26,6 @@ body {
     border: 1px solid black;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,8 +34,6 @@ body {
 #header-text {
     width: 556.336px;
     height: 22px;
-    border: 1px solid green;
-    margin-left: 20px;
     display: flex;
     justify-content: space-between;
     font: normal 14px/22px Helvetica Neue, sans-serif, Arial;
@@ -43,7 +43,6 @@ body {
 #navigator {
     width: 20px;
     height: 20px;
-    border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,7 +51,6 @@ body {
 #head-border2 {
     width: 745.336px;
     height: 38.914px;
-    border: 1px solid green;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -63,16 +61,42 @@ body {
 .weather {
     width: 270.523px;
     height: 50px;
-    border: 1px solid black;
-    margin-left: 29px;
+    padding-inline-start: 0px;
 }
 
 .weather-1 {
     width: 55.05px;
     height: 50px;
-    border: 1px purple solid;
     display: flex;
-    align-items: center;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+}
+
+.weather-2 {
+    width: 72.05px;
+    height: 50px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.weather-3 {
+    width: 83.43px;
+    height: 50px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.text-green {
+    color: green;
+    font-size: 20px;
 }
 
 .weather-logo {
@@ -89,7 +113,7 @@ body {
     position: absolute;
     top: 60px;
     transition: step-start 1.3s;
-    
+
 }
 
 .news-h:hover+.hide {
@@ -97,38 +121,167 @@ body {
     color: black;
     /* font-family: ; */
     font-size: 18px;
-    border: 2px solid gray;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
     transform: scale(1.04);
-    
-    
 }
-.first-section-text{
 
+.news-b:hover+.hide {
+    display: block;
+    color: black;
+    font-size: 18px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    transform: scale(1.04);
+}
+
+.first-section-text {
     height: 274px;
-    border: 1px solid greenyellow;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-/* .news-section{
 
-} */
-
-.gogo-section{
+.gogo-section {
     width: 367px;
     height: 286px;
     border: 1px solid black;
-    
+    border-radius: 12px;
+
 }
-.second-section-text{
+
+.second-section-text {
     height: 254px;
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.live-section {
+    width: 200px;
+    height: 180px;
+    border: 0.5px solid black;
+    border-radius: 12px;
+
+}
+
+.live-section-text {
+    height: 148px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.style {
+    width: 367px;
+    height: 244px;
+    border: 0.5px solid black;
+    border-radius: 12px;
+}
+
+.style-text {
+    height: 212px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+#main-body {
+    width: 1180px;
+    height: 100vh;
+    background-color: #f7f7f7;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.news-section {
+    display: flex;
+    border: 1px dotted blue;
+    border-radius: 12px;
+    display: flex;
+}
+
+.news-bussines {
+    width: 557.5px;
+    height: 385px;
+    border-radius: 12px;
+    background: linear-gradient(129deg, rgb(198, 198, 198), white)
+}
+
+.news-bussines-1 {
+    width: 557.5px;
+    height: 385px;
+    border: 1px solid green;
+    border-radius: 12px
+;
+    
+
+}
+
+.back-gradient {
+    width: 73.02px;
+    height: 30px;
+    background: linear-gradient(129deg, #c40097, #d6710b);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-image: #c90027;
+    margin: 0 0 20px;
+    display: flex;  flex-direction: column;
+}
+
+.back-gradient-text {
+    font-family: normal 14px / 22px Helvetica Neue, sans-serif, Arial;
+    ;
+    color: white;
+    padding: 5px 12px;
+}
+
+.news-bussines-text {
+    width: 502.5px;
+    height: 82px;
+    font-size: 26px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+.news-bussines-text2{
+    display: flex;
+    flex-wrap: wrap;
+    font: normal 14px / 22px Helvetica Neue, sans-serif, Arial;
+    width: 502.5px;
+    height: 60px;
+    margin:0 0 20px;
+    color:gray ;
+    font-weight: 400;
+}
+.share-gradient{
+    width: 56.35px;
+    height: 36px;
+    background-color:rgb(177, 175, 175);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    display: flex;
+    justify-content: center;
+    gap:8px;
+    align-items: center;
+    
+}
+.share-gradient-image{
+    width: 16px;
+    height: 16px;
+
 }
