@@ -312,7 +312,6 @@ body {
 .mini-news {
     height: 1100px;
     height: 333px;
-    border: 1px solid black;
     padding-top: 30px;
     padding-bottom: 50px;
 }
@@ -320,13 +319,13 @@ body {
 .mini-news-1 {
     width: 1115px;
     height: 283px;
-    border: 1px solid green;
+    display: flex;
+    gap: 15px;
 }
 
 .mini-news-1-1 {
     width: 263.750px;
     height: 283px;
-    border: 1px solid black;
 }
 
 .bord {
@@ -339,7 +338,6 @@ body {
     margin-top: 10px;
     font-weight: 600;
     display: -webkit-box;
-
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
