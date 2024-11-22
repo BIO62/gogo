@@ -1310,6 +1310,12 @@ body {
   background-color: white;
   color: #2e3ff6;
 }
+.news-list-1-3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .news-list-1-3-1 {
   width: 1100px;
@@ -1734,8 +1740,10 @@ body {
   margin-top: 60px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
 }
-.comic-img{
+
+.comic-img {
   width: 25px;
   height: 27px;
 }
@@ -1747,19 +1755,23 @@ body {
   display: flex;
   gap: 15px;
 }
-.comic-news-1{
+
+.comic-news-1 {
   width: 542.500px;
   height: 330px;
   border-radius: 5px;
   border: 1px solid rgb(241, 241, 241);
 }
-.comic-img-1{
+
+.comic-img-1 {
   width: 542.500px;
-  height: 170.344;
+  height: 212.656px;
   object-fit: cover;
 
 }
-.comic-text{
+
+
+.comic-text {
   width: 520.500px;
   height: 108px;
   border: 1px solid #f1f1f1;
@@ -1769,22 +1781,22 @@ body {
   border-bottom-right-radius: 5px;
   border: 1px solid rgb(241, 241, 241);
 }
-.comic-text-1{
+
+.comic-text-1 {
   min-height: 72px;
   font-weight: 500;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 16px !important;
-    line-height: 24px !important;
-    font-family: "Helvetica Neue", sans-serif, Arial;
-    width: 520.500px;
+  line-height: 24px !important;
+  font-family: "Helvetica Neue", sans-serif, Arial;
+  width: 520.500px;
 }
-.comic-bg{
+
+.comic-bg {
   width: 542.500px;
-  height: 170.344px;
+  height: 212.656px;
   background-color: black;
   border-radius: 5px;
   position: absolute;
@@ -1792,21 +1804,24 @@ body {
   top: 0;
   left: 0;
 }
-.comic-hover:hover .comic-img-1{
+
+.comic-hover:hover .comic-img-1 {
   transform: scale(1.06);
   transition-duration: 0.4s;
 }
-.comic-hover{
+
+.comic-hover {
   overflow: hidden;
   position: relative;
 }
 
-.comic-hover:hover .comic-bg{
+.comic-hover:hover .comic-bg {
   opacity: 0.5;
   transition-duration: 0.4s;
 
 }
-.comic-hover-text{
+
+.comic-hover-text {
   font-size: 16px;
   font-weight: bold;
   color: white;
@@ -1820,7 +1835,57 @@ body {
   height: 100%;
   opacity: 0;
 }
-.comic-hover:hover .comic-hover-text{
+
+.comic-hover:hover .comic-hover-text {
   opacity: 1;
   transition-duration: 0.4s;
+}
+.news-black{
+  width: 100vw;
+  height: 717.328px;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+.black-1{
+  width: 1100px;
+  height: 717.328px;
+  border: 1px solid white;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.black-f{
+  width: 1100px;
+  height: 374.328px;
+  border: 1px solid white;
+}
+.black-text{
+  font-size: 18px;
+  font-weight: 700;
+  font-family :"Helvetica Neue", sans-serif, Arial;
+  color: white;
+  line-height: 30px;
+}
+.uzeh-hover{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.uzeh-hover:hover .black-text{
+  color: rgb(4, 79, 156);
+  transition-duration: 0.5s;
+}
+.black-news{
+  width: 1115px;
+  height: 323px;
+  margin-top: 20px;
+  border: 1px solid white;
+  margin-left: -15px;
+}
+.black-news-1{
+  width: 278.75px;
+  height: 323px;
+  border: 1px solid white;
 }
