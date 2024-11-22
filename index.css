@@ -1852,14 +1852,14 @@ body {
 .black-1{
   width: 1100px;
   height: 717.328px;
-  border: 1px solid white;
+
   padding-left: 40px;
   padding-right: 40px;
 }
 .black-f{
   width: 1100px;
   height: 374.328px;
-  border: 1px solid white;
+
 }
 .black-text{
   font-size: 18px;
@@ -1881,11 +1881,80 @@ body {
   width: 1115px;
   height: 323px;
   margin-top: 20px;
-  border: 1px solid white;
+
   margin-left: -15px;
 }
 .black-news-1{
-  width: 278.75px;
+  width: 263.750px;
   height: 323px;
-  border: 1px solid white;
+
+  padding-left: 15px;
+  display: flex;
+  gap: 15px;
+}
+.black-news-hover{
+  width: 263.750px;
+  height: 170px;
+  position: relative;
+}
+.black-img{
+  width: 263.750px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.black-video-icon{
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-top-left-radius: 5px;
+}
+
+.black-news-text{
+  width: 263.750px;
+  height: 66px;
+  margin-top: 7px;
+  min-height: 55px;
+  font-size: 14px;
+  font-family :"Helvetica Neue", sans-serif, Arial;
+  font-weight: 550;
+line-height: 22px;
+color: white;
+}
+.black-bg{
+  width: 263.750px;
+  height: 170px;
+  background-color: black;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.black-news-hover:hover .black-bg{
+  opacity: 0.5;
+  transition-duration: 0.4s;
+}
+.unshihshit{
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  line-height: 22.4px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.black-news-hover:hover .unshihshit{
+  opacity: 1;
+  transition-duration: 0.4s;
+}
+#footer{
+  width: 2240px;
+  height: 247.648px;
+  background-color: white;
 }
